@@ -1,0 +1,16 @@
+{
+  "name": "apis",
+  "version": "1.0.0",
+  "description": "use express framework",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Risab Vishwakarma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.2"
+  }
+}

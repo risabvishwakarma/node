@@ -39,6 +39,17 @@ router.get('/:id',async (req,res)=>{
         }
 });
 
+router.delete('/:id',async (req,res)=>{
+    const _id=req.params.id
+    try{
+      const a= await Alien.findByIdAndRemove({_id});
+       console.log(a)
+        
+        }catch(err){
+            res.send(err)
+        }  
+})
+
 router.patch('/:id',async (req,res)=>{
 
     try{

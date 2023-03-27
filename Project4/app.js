@@ -6,7 +6,7 @@ const server=express();
 const PORT=8083;
 
 const url='mongodb://localhost:27017/AlienDBex'
-try{
+// try{
  mongoos.connect(url,{useNewUrlParser:true})
 .catch(error => console.log("ERROR:- "+error));
 
@@ -31,6 +31,6 @@ server.use('/address',addressrouter);
 server.listen(PORT,(req,res)=>{
     console.log("Running on Port ...  "+`${PORT}`);
 });
-}catch(e){
-    Console.log("Error :-"+e);
-}
+// }catch(e){
+//     Console.log("Error :-"+e);
+// }
